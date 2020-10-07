@@ -125,7 +125,12 @@ function handleCellClick(clickedCellEvent) {
 }
 
 function handleRestartGame() {
-
+  gameActive = true;
+  currentPlayer = "X";
+  gameState = ["", "", "", "", "", "", "", "", ""];
+  statusDisplay.innerHTML = currentPlayerTurn();
+  document.querySelectorAll('.cell')
+  .forEach(cell => cell.innerHTML = "");
 }
 /*
 And finally we add our event listeners to the actual game cells, as well as our 
