@@ -34,8 +34,13 @@ const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 We set the inital message to let the players know whose turn it is
 */
 statusDisplay.innerHTML = currentPlayerTurn();
-function handleCellPlayed() {
-
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+  /*
+  We update our internal game state to reflect the played move, 
+  as well as update the user interface to reflect the played move
+  */
+      gameState[clickedCellIndex] = currentPlayer;
+      clickedCell.innerHTML = currentPlayer;
 }
 function handlePlayerChange() {
 
