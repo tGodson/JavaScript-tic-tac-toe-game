@@ -15,7 +15,9 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "arrow-parens": "off"
+    "arrow-parens": "off",
+    "no-return-assign":0,
+    "no-continue":"off"
   },
   "ignorePatterns": [
     "dist/",
