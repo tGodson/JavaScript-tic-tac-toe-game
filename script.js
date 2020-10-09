@@ -10,13 +10,13 @@ const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
-function handleCellPlayed(clickedCell, clickedCellIndex) {
+const handleCellPlayed = (clickedCell, clickedCellIndex) => {
 
       gameState[clickedCellIndex] = currentPlayer;
       clickedCell.innerHTML = currentPlayer;
 }
 
-function handlePlayerChange() {
+const handlePlayerChange = () => {
   currentPlayer = currentPlayer === "X" ? "O" : "X";
   statusDisplay.innerHTML = currentPlayerTurn();
 }
@@ -32,7 +32,7 @@ const winningConditions = [
   [2, 4, 6]
 ];
 
-function handleResultValidation() {
+const handleResultValidation = () => {
   let roundWon = false;
   for (let i = 0; i <= 7; i++) {
       const winCondition = winningConditions[i];
@@ -64,7 +64,7 @@ function handleResultValidation() {
   handlePlayerChange();
 }
 
-function handleCellClick(clickedCellEvent) {
+const handleCellClick = (clickedCellEvent) => {
 
       const clickedCell = clickedCellEvent.target;
       const clickedCellIndex = parseInt(
@@ -78,7 +78,7 @@ function handleCellClick(clickedCellEvent) {
       handleResultValidation();
 }
 
-function handleRestartGame() {
+const handleRestartGame = () => {
   gameActive = true;
   currentPlayer = "X";
   gameState = ["", "", "", "", "", "", "", "", ""];
