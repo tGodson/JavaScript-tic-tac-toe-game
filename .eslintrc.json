@@ -2,10 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true,
-    "jquery": true
+    "jest": true
   },
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
@@ -15,12 +13,6 @@
     "no-shadow": "off",
     "no-param-reassign": "off",
     "eol-last": "off",
-    "arrow-parens": "off",
-    "no-return-assign":0,
-    "no-continue":"off"
-  },
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+    "arrow-parens": "off"
+  }
 }

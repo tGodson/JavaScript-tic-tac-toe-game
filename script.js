@@ -18,7 +18,7 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
 const handlePlayerChange = () => {
   currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
   statusDisplay.innerHTML = currentPlayerTurn();
-}
+};
 
 const winningConditions = [
   [0, 1, 2],
@@ -38,10 +38,9 @@ const handleResultValidation = () => {
     const a = gameState[winCondition[0]];
     const b = gameState[winCondition[1]];
     const c = gameState[winCondition[2]];
+
     if (a === '' || b === '' || c === '') {
-      continue;
-    }
-    if (a === b && b === c) {
+    } else if (a === b && b === c) {
       roundWon = true;
       break;
     }
@@ -61,7 +60,7 @@ const handleResultValidation = () => {
   }
 
   handlePlayerChange();
-}
+};
 
 const handleCellClick = (clickedCellEvent) => {
   const clickedCell = clickedCellEvent.target;
@@ -74,7 +73,7 @@ const handleCellClick = (clickedCellEvent) => {
 
   handleCellPlayed(clickedCell, clickedCellIndex);
   handleResultValidation();
-}
+};
 
 const handleRestartGame = () => {
   gameActive = true;
@@ -82,7 +81,7 @@ const handleRestartGame = () => {
   gameState = ['', '', '', '', '', '', '', '', ''];
   statusDisplay.innerHTML = currentPlayerTurn();
   document.querySelectorAll('.cell')
-    .forEach(cell => cell.innerHTML = '');
-}
+    .forEach(cell => { cell.innerHTML = ''; });
+};
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
