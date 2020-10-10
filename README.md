@@ -23,7 +23,7 @@ This is a Tic Tac Toe game you can play in your browser!
 
 ### Index Page
 
-![screenshot](images/Screenshot.png)
+![screenshot](images/game_screenshot.png)
 
 ## Getting Started
 
