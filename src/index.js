@@ -16,7 +16,7 @@ import {
 } from './dom';
 import {
   switchTurns, createPlayer, checkWin, winCombos, gameBoard,
-} from './game-logic';
+} from './logic';
 
 let turn = true;
 let playersArr = [];

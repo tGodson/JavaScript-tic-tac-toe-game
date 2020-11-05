@@ -1,39 +1,23 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/main.js',
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    port: 9010,
-  },
+  entry: './src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'src/template.html',
-    }),
-  ],
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        test: /\.css$/i,
+        use: ['style-loader','css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
-          'file-loader',
+          {
+            loader: 'file-loader',
+          },
         ],
       },
     ],
