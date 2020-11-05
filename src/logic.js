@@ -61,7 +61,7 @@
 /* eslint-disable import/prefer-default-export */
 
 export const gameBoard = {
-  board: ["", "", "", "", "", "", "", "", ""],
+  board: ['', '', '', '', '', '', '', '', ''],
 };
 
 export const winCombos = [

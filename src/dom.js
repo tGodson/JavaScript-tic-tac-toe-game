@@ -82,7 +82,7 @@
 
 
 /* eslint-disable import/no-cycle */
-//import img from './giphy.gif';
+// import img from './giphy.gif';
 import { gameFlow } from './index';
 
 const boardDisplay = document.querySelector('.board-display');
@@ -92,7 +92,7 @@ const form = document.querySelector('.form');
 const message = document.querySelector('.message');
 const replayBtn = document.querySelector('.replay-btn');
 const image = document.querySelector('.image');
-//const giphy = document.querySelector('.congrats-img');
+// const giphy = document.querySelector('.congrats-img');
 
 const drawGame = () => {
   const msg = 'This game is a draw!';
@@ -110,7 +110,7 @@ const endGame = (player) => {
   form.classList.add('hide');
   form.classList.remove('show');
   replayBtn.classList.add('show');
-  //giphy.src = img;
+  // giphy.src = img;
   image.classList.remove('hide');
 };
 
