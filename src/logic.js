@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-// 
+//
 // const winningConditions = [
 //   [0, 1, 2],
 //   [3, 4, 5],
@@ -60,11 +60,11 @@
 /* eslint-disable no-return-assign */
 /* eslint-disable import/prefer-default-export */
 
-const gameBoard = {
-  board: ['', '', '', '', '', '', '', '', ''],
+export const gameBoard = {
+  board: ["", "", "", "", "", "", "", "", ""],
 };
 
-const winCombos = [
+export const winCombos = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -75,15 +75,15 @@ const winCombos = [
   [2, 4, 6],
 ];
 
-function switchTurns(turn) {
-  return turn = !turn;
+export function switchTurns(turn) {
+  return (turn = !turn);
 }
 
-function createPlayer(name, symbol) {
+export function createPlayer(name, symbol) {
   return { name, symbol };
 }
 
-function checkWin(winCombos, symbol, gameBoard) {
+export function checkWin(winCombos, symbol, gameBoard) {
   for (let i = 0; i < winCombos.length; i += 1) {
     const a = gameBoard.board[winCombos[i][0]];
     const b = gameBoard.board[winCombos[i][1]];
