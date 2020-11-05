@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "dev": "webpack-dev-server --config webpack.dev.js --mode development --open",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --config webpack.dev.js --mode development --open",
+    "start": "webpack-dev-server --config webpack.dev.js --mode production --open",
     "lint": "npx eslint . --fix && npx stylelint '**/*.{css,scss}' --fix"
   },
   "repository": {

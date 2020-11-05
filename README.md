@@ -1,4 +1,5 @@
 # JavaScript-tic-tac-toe-game
+
 This is a Tic Tac Toe game you can play in your browser!
 
 # Project Specification
@@ -10,7 +11,6 @@ This is a Tic Tac Toe game you can play in your browser!
 5. Build the logic that checks for when the game is over! Should check for 3-in-a-row and a tie.
 6. Clean up the interface to allow players to put in their names, include a button to start/restart the game and add a display element that congratulates the winning player!
 7. Optional - If you’re feeling ambitious create an AI so that a player can play against the computer!
-
 
 ## Built With
 
@@ -31,9 +31,17 @@ To get a local copy up and running follow these steps:
 
 ### Prerequisites
 
-Mozilla Firefox
+- npm
+- webpack
+- jest
 
-- Javascript enabled
+### Setup
+
+- Clone the repository.
+- cd into js-tic-tac-toe folder
+- Run `npm install`.
+- Run `npm run test` from your command line.
+- Run `npm run dev` to play the game.
 
 ### Usage
 
@@ -75,4 +83,3 @@ Start by:
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
