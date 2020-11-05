@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "webpack --mode development",
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --config webpack.dev.js --mode development --open",
     "lint": "npx eslint . --fix && npx stylelint '**/*.{css,scss}' --fix"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/tGodson/JavaScript-tic-tac-toe-game#readme",
   "devDependencies": {
     "@babel/preset-env": "7.11.5",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.1.0",
