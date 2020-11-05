@@ -1,1 +1,3 @@
 node_modules
+dist
+install_nvm.sh
