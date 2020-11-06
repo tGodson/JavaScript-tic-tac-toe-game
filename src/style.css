@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c4c0c0;
+}
+
+.row {
+  background-color: #fff;
+  width: 60%;
+  margin: 50px auto;
+  height: 100%;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.board-display {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.cell {
+  border: 1px solid #000;
+}
+
+.form {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+
+.form label,
+.form input {
+  margin-bottom: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.grid {
+  display: grid;
+}
+
+.cell p {
+  margin: auto;
+  font-size: 80px;
+  text-align: center;
+  color: #000;
+}
+
+.message {
+  margin: 20px auto;
+  font-size: 40px;
+  color: #286090;
+}
+
+.replay-btn {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+  width: 200px;
+  margin: auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+
+  /* position: absolute;
+  left: 27%; */
+}
